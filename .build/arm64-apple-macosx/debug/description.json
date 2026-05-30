@@ -1,0 +1,661 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.DisplayBar-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/sources",
+      "importPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/EDRKeepAliveController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/Main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/MenuControls.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/CMetrics.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "DisplayBar",
+      "moduleOutputPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules/DisplayBar.swiftmodule",
+      "objects" : [
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayBarApp.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayManager.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayModels.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/EDRKeepAliveController.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/Main.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/MenuControls.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-Xcc",
+        "-fmodule-map-file=/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/CMetrics/include",
+        "-module-cache-path",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "DisplayBar_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mac_apps"
+      ],
+      "outputFileMapPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/EDRKeepAliveController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/Main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/MenuControls.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules/DisplayBar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayBarApp.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayManager.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayModels.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/EDRKeepAliveController.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/Main.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/MenuControls.swift"
+      ],
+      "tempsPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ResourceBar-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/sources",
+      "importPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Formatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Monitors.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/ResourceBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/StatusStripRenderer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/CMetrics.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "ResourceBar",
+      "moduleOutputPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules/ResourceBar.swiftmodule",
+      "objects" : [
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.swift.o",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-Xcc",
+        "-fmodule-map-file=/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/CMetrics/include",
+        "-module-cache-path",
+        "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "ResourceBar_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mac_apps"
+      ],
+      "outputFileMapPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules/ResourceBar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Formatters.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Main.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Monitors.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/ResourceBarApp.swift",
+        "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/StatusStripRenderer.swift"
+      ],
+      "tempsPath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "DisplayBar" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "DisplayBar",
+      "-package-name",
+      "mac_apps",
+      "-c",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayBarApp.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayManager.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayModels.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/EDRKeepAliveController.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/Main.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/MenuControls.swift",
+      "-I",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-Xcc",
+      "-fmodule-map-file=/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/CMetrics/include",
+      "-module-cache-path",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "DisplayBar_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mac_apps",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ResourceBar" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ResourceBar",
+      "-package-name",
+      "mac_apps",
+      "-c",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Formatters.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Main.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Monitors.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/ResourceBarApp.swift",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/StatusStripRenderer.swift",
+      "-I",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-Xcc",
+      "-fmodule-map-file=/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/acloran/Documents/GitHub/Mac Apps/Sources/CMetrics/include",
+      "-module-cache-path",
+      "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "ResourceBar_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mac_apps",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "CMetrics" : [
+
+    ],
+    "DisplayBar" : [
+      "CMetrics"
+    ],
+    "ResourceBar" : [
+      "CMetrics"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar-entitlement.plist"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/EDRKeepAliveController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/Main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/MenuControls.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/sources"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/CMetrics.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/DisplayModels.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/EDRKeepAliveController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/Main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.build/MenuControls.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/DisplayBar.product/Objects.LinkFileList"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar-entitlement.plist"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Formatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Monitors.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/ResourceBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/StatusStripRenderer.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/sources"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/CMetrics.build/CMetrics.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.product/Objects.LinkFileList"
+    },
+    "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

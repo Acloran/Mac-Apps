@@ -1,0 +1,4 @@
+module CMetrics {
+    umbrella header "/Users/acloran/Documents/GitHub/Mac Apps/Sources/CMetrics/include/CMetrics.h"
+    export *
+}

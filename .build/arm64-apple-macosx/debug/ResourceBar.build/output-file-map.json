@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/primary.swiftdeps"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Formatters.swift": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Formatters.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Main.swift": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Main.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/Monitors.swift": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/Monitors.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/ResourceBarApp.swift": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/ResourceBarApp.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/ResourceBar/StatusStripRenderer.swift": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/debug/ResourceBar.build/StatusStripRenderer.dia"
+  }
+}

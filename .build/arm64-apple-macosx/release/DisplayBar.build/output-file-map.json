@@ -1,0 +1,43 @@
+{
+  "": {
+    "dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBar.d",
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBar.o",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/primary.swiftdeps"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayBarApp.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBarApp.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBarApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBarApp.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayBarApp.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayManager.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayManager.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayManager.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayManager.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/DisplayModels.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayModels.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayModels.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/DisplayModels.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/EDRKeepAliveController.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/EDRKeepAliveController.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/EDRKeepAliveController~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/EDRKeepAliveController.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/EDRKeepAliveController.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/Main.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/Main.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/Main~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/Main.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/Main.dia"
+  },
+  "/Users/acloran/Documents/GitHub/Mac Apps/Sources/DisplayBar/MenuControls.swift": {
+    "object": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/MenuControls.swift.o",
+    "swiftmodule": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/MenuControls~partial.swiftmodule",
+    "swift-dependencies": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/MenuControls.swiftdeps",
+    "diagnostics": "/Users/acloran/Documents/GitHub/Mac Apps/.build/arm64-apple-macosx/release/DisplayBar.build/MenuControls.dia"
+  }
+}
