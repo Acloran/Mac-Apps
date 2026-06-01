@@ -411,7 +411,10 @@ final class SystemMonitor {
         if let telemetry = registryProperty(service: service, key: "PowerTelemetryData") as? [String: Any],
            let milliwatts = signedDoubleValue(telemetry["BatteryPower"]),
            abs(milliwatts) > 0 {
-            return milliwatts / 1000
+            // PowerTelemetryData uses the battery's perspective: negative while charging,
+            // positive while discharging. ResourceBar exposes positive as watts into
+            // the battery and negative as watts out of it.
+            return -milliwatts / 1000
         }
 
         let voltageMillivolts = doubleValue(registryProperty(service: service, key: "Voltage"))
