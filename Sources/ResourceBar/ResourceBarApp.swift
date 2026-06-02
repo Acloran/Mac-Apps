@@ -374,7 +374,11 @@ final class ResourceBarApp: NSObject, NSApplicationDelegate {
     }
 
     private func batteryPowerDetail(_ battery: BatterySnapshot) -> String {
-        let power = batteryPowerDescription(battery.batteryPowerWatts, isCharging: battery.isCharging)
+        let power = batteryPowerDescription(
+            battery.batteryPowerWatts,
+            isCharging: battery.isCharging,
+            isOnAC: battery.isOnAC
+        )
         return "Battery Power: \(power)"
     }
 
@@ -391,9 +395,13 @@ final class ResourceBarApp: NSObject, NSApplicationDelegate {
         return "Adapter Input: \(actual) actual"
     }
 
-    private func batteryPowerDescription(_ watts: Double?, isCharging: Bool) -> String {
+    private func batteryPowerDescription(_ watts: Double?, isCharging: Bool, isOnAC: Bool) -> String {
         guard let watts else {
             return isCharging ? "-- W into battery" : "not charging"
+        }
+
+        if !isOnAC {
+            return "\(MetricFormatter.watts(abs(watts))) out of battery"
         }
 
         if watts > 0.25 {

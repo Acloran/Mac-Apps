@@ -200,7 +200,7 @@ final class SystemMonitor {
             secondsRemaining = nil
         }
 
-        let hardware = batteryHardwareSnapshot()
+        let hardware = batteryHardwareSnapshot(isOnAC: isOnAC, isCharging: isCharging)
         return BatterySnapshot(
             secondsRemaining: secondsRemaining,
             isCharging: isCharging,
@@ -369,7 +369,7 @@ final class SystemMonitor {
         return DiskCounters(readBytes: bestReadBytes, writtenBytes: bestWrittenBytes, timestamp: Date())
     }
 
-    private func batteryHardwareSnapshot() -> (physicalTemperature: Double?, virtualTemperature: Double?, batteryPowerWatts: Double?, adapterInputWatts: Double?, adapterWatts: Double?) {
+    private func batteryHardwareSnapshot(isOnAC: Bool, isCharging: Bool) -> (physicalTemperature: Double?, virtualTemperature: Double?, batteryPowerWatts: Double?, adapterInputWatts: Double?, adapterWatts: Double?) {
         let service = IOServiceGetMatchingService(kIOMainPortDefault, IOServiceMatching("AppleSmartBattery"))
         guard service != 0 else {
             return (nil, nil, nil, nil, nil)
@@ -380,7 +380,7 @@ final class SystemMonitor {
         return (
             physicalTemperature: batteryTemperature(service: service, key: "Temperature"),
             virtualTemperature: batteryVirtualTemperature(service: service),
-            batteryPowerWatts: batteryPowerWatts(service: service),
+            batteryPowerWatts: batteryPowerWatts(service: service, isOnAC: isOnAC, isCharging: isCharging),
             adapterInputWatts: adapterInputWatts(service: service),
             adapterWatts: adapterWatts(service: service)
         )
@@ -407,14 +407,20 @@ final class SystemMonitor {
         return celsius
     }
 
-    private func batteryPowerWatts(service: io_object_t) -> Double? {
+    private func batteryPowerWatts(service: io_object_t, isOnAC: Bool, isCharging: Bool) -> Double? {
         if let telemetry = registryProperty(service: service, key: "PowerTelemetryData") as? [String: Any],
            let milliwatts = signedDoubleValue(telemetry["BatteryPower"]),
            abs(milliwatts) > 0 {
-            // PowerTelemetryData uses the battery's perspective: negative while charging,
-            // positive while discharging. ResourceBar exposes positive as watts into
-            // the battery and negative as watts out of it.
-            return -milliwatts / 1000
+            let watts = abs(milliwatts) / 1000
+            if isCharging {
+                return watts
+            }
+
+            if !isOnAC {
+                return -watts
+            }
+
+            return milliwatts / 1000
         }
 
         let voltageMillivolts = doubleValue(registryProperty(service: service, key: "Voltage"))
