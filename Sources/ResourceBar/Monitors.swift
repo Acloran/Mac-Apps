@@ -161,7 +161,17 @@ final class SystemMonitor {
             }
         }
 
-        return ProcessorTemperatureSnapshot(celsius: temperatures.max(), sensorCount: temperatures.count)
+        if let smcTemperature = temperatures.max() {
+            return ProcessorTemperatureSnapshot(celsius: smcTemperature, sensorCount: temperatures.count)
+        }
+
+        var sensorCount: Int32 = 0
+        let appleSiliconTemperature = ResourceBarAppleSiliconProcessorTemperature(&sensorCount)
+        if appleSiliconTemperature > 0, appleSiliconTemperature < 125 {
+            return ProcessorTemperatureSnapshot(celsius: appleSiliconTemperature, sensorCount: Int(sensorCount))
+        }
+
+        return ProcessorTemperatureSnapshot(celsius: nil, sensorCount: 0)
     }
 
     func batterySnapshot() -> BatterySnapshot {

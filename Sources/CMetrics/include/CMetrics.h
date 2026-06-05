@@ -7,6 +7,7 @@ int32_t ResourceBarMemoryFreeLevel(void);
 int32_t ResourceBarFanCount(void);
 double ResourceBarFanRPM(int32_t fanIndex);
 double ResourceBarSMCTemperature(const char *smcKey);
+double ResourceBarAppleSiliconProcessorTemperature(int32_t *sensorCount);
 
 uint32_t ResourceBarDisplayFramebufferService(uint32_t displayID);
 int32_t ResourceBarDisplayModePixelEncoding(const void *mode, char *buffer, uint32_t bufferLength);

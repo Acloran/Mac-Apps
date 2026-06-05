@@ -2,12 +2,17 @@
 
 #include <ApplicationServices/ApplicationServices.h>
 #include <CoreFoundation/CoreFoundation.h>
+#include <IOKit/hidsystem/IOHIDEventSystemClient.h>
+#include <IOKit/hidsystem/IOHIDServiceClient.h>
 #include <IOKit/graphics/IOGraphicsLib.h>
 #include <IOKit/graphics/IOGraphicsTypes.h>
 #include <IOKit/i2c/IOI2CInterface.h>
 #include <IOKit/IOKitLib.h>
+#include <ctype.h>
 #include <dlfcn.h>
+#include <math.h>
 #include <mach/mach_time.h>
+#include <string.h>
 #include <sys/syscall.h>
 #include <unistd.h>
 
@@ -165,6 +170,233 @@ double ResourceBarSMCTemperature(const char *smcKey) {
 
     if (value.keyInfo.dataType == ResourceBarSMCKey("sp78")) {
         return ResourceBarSMCSP78(&value);
+    }
+
+    return -273.15;
+}
+
+typedef IOHIDEventSystemClientRef (*ResourceBarHIDCreateClientFunction)(CFAllocatorRef allocator);
+typedef void (*ResourceBarHIDSetMatchingFunction)(IOHIDEventSystemClientRef client, CFDictionaryRef matching);
+typedef CFTypeRef (*ResourceBarHIDCopyEventFunction)(IOHIDServiceClientRef service, int64_t type, int32_t options, int64_t timeout);
+typedef double (*ResourceBarHIDGetFloatValueFunction)(CFTypeRef event, int32_t field);
+
+enum {
+    ResourceBarHIDVendorDefinedUsagePage = 0xff00,
+    ResourceBarHIDTemperatureUsage = 5,
+    ResourceBarHIDTemperatureEventType = 15,
+    ResourceBarHIDTemperatureEventField = 15 << 16
+};
+
+static int ResourceBarCFNumberInt(CFTypeRef value) {
+    int result = -1;
+    if (value != 0 && CFGetTypeID(value) == CFNumberGetTypeID()) {
+        CFNumberGetValue((CFNumberRef)value, kCFNumberIntType, &result);
+    }
+
+    return result;
+}
+
+static int ResourceBarHIDTemperatureSensorName(IOHIDServiceClientRef service, char *buffer, size_t bufferLength) {
+    if (buffer == 0 || bufferLength == 0) {
+        return 0;
+    }
+
+    buffer[0] = 0;
+
+    CFTypeRef value = IOHIDServiceClientCopyProperty(service, CFSTR("Product"));
+    if (value == 0) {
+        return 0;
+    }
+
+    int copied = 0;
+    if (CFGetTypeID(value) == CFStringGetTypeID()) {
+        copied = CFStringGetCString((CFStringRef)value, buffer, bufferLength, kCFStringEncodingUTF8);
+    }
+
+    CFRelease(value);
+    return copied;
+}
+
+static int ResourceBarASCIIContainsInsensitive(const char *haystack, const char *needle) {
+    if (haystack == 0 || needle == 0 || needle[0] == 0) {
+        return 0;
+    }
+
+    for (const char *start = haystack; start[0] != 0; start += 1) {
+        const char *left = start;
+        const char *right = needle;
+        while (left[0] != 0 && right[0] != 0 && tolower((unsigned char)left[0]) == tolower((unsigned char)right[0])) {
+            left += 1;
+            right += 1;
+        }
+
+        if (right[0] == 0) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+
+static int ResourceBarProcessorTemperatureSensorScore(const char *name) {
+    if (name == 0 || name[0] == 0) {
+        return 0;
+    }
+
+    if (ResourceBarASCIIContainsInsensitive(name, "battery")
+        || ResourceBarASCIIContainsInsensitive(name, "gas gauge")
+        || ResourceBarASCIIContainsInsensitive(name, "nand")
+        || ResourceBarASCIIContainsInsensitive(name, "ssd")
+        || ResourceBarASCIIContainsInsensitive(name, "ambient")) {
+        return 0;
+    }
+
+    int score = 0;
+
+    if (ResourceBarASCIIContainsInsensitive(name, "cpu")
+        || ResourceBarASCIIContainsInsensitive(name, "processor")
+        || ResourceBarASCIIContainsInsensitive(name, "package")
+        || ResourceBarASCIIContainsInsensitive(name, "cluster")
+        || ResourceBarASCIIContainsInsensitive(name, "soc")
+        || ResourceBarASCIIContainsInsensitive(name, "die")) {
+        score = 100;
+    }
+
+    if (strncmp(name, "PMU ", 4) == 0) {
+        score = score > 90 ? score : 90;
+    }
+
+    if (ResourceBarASCIIContainsInsensitive(name, "tdie")
+        || ResourceBarASCIIContainsInsensitive(name, "TP")) {
+        score += 20;
+    } else if (ResourceBarASCIIContainsInsensitive(name, "tdev")) {
+        score += 10;
+    }
+
+    return score;
+}
+
+double ResourceBarAppleSiliconProcessorTemperature(int32_t *sensorCount) {
+    if (sensorCount != 0) {
+        *sensorCount = 0;
+    }
+
+    ResourceBarHIDCreateClientFunction createClient = (ResourceBarHIDCreateClientFunction)dlsym(RTLD_DEFAULT, "IOHIDEventSystemClientCreate");
+    ResourceBarHIDCreateClientFunction createSimpleClient = (ResourceBarHIDCreateClientFunction)dlsym(RTLD_DEFAULT, "IOHIDEventSystemClientCreateSimpleClient");
+    ResourceBarHIDSetMatchingFunction setMatching = (ResourceBarHIDSetMatchingFunction)dlsym(RTLD_DEFAULT, "IOHIDEventSystemClientSetMatching");
+    ResourceBarHIDCopyEventFunction copyEvent = (ResourceBarHIDCopyEventFunction)dlsym(RTLD_DEFAULT, "IOHIDServiceClientCopyEvent");
+    ResourceBarHIDGetFloatValueFunction getFloatValue = (ResourceBarHIDGetFloatValueFunction)dlsym(RTLD_DEFAULT, "IOHIDEventGetFloatValue");
+
+    if ((createClient == 0 && createSimpleClient == 0) || setMatching == 0 || copyEvent == 0 || getFloatValue == 0) {
+        return -273.15;
+    }
+
+    IOHIDEventSystemClientRef client = createClient != 0
+        ? createClient(kCFAllocatorDefault)
+        : createSimpleClient(kCFAllocatorDefault);
+    if (client == 0) {
+        return -273.15;
+    }
+
+    int usagePageValue = ResourceBarHIDVendorDefinedUsagePage;
+    int usageValue = ResourceBarHIDTemperatureUsage;
+    CFNumberRef usagePage = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &usagePageValue);
+    CFNumberRef usage = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &usageValue);
+    const void *keys[] = { CFSTR("PrimaryUsagePage"), CFSTR("PrimaryUsage") };
+    const void *values[] = { usagePage, usage };
+    CFDictionaryRef matching = CFDictionaryCreate(
+        kCFAllocatorDefault,
+        keys,
+        values,
+        2,
+        &kCFTypeDictionaryKeyCallBacks,
+        &kCFTypeDictionaryValueCallBacks
+    );
+
+    if (matching != 0) {
+        setMatching(client, matching);
+        CFRelease(matching);
+    }
+    if (usagePage != 0) {
+        CFRelease(usagePage);
+    }
+    if (usage != 0) {
+        CFRelease(usage);
+    }
+
+    CFArrayRef services = IOHIDEventSystemClientCopyServices(client);
+    if (services == 0) {
+        CFRelease(client);
+        return -273.15;
+    }
+
+    double bestTemperature = -273.15;
+    int bestScore = 0;
+    int bestScoreCount = 0;
+    CFIndex serviceCount = CFArrayGetCount(services);
+
+    for (CFIndex index = 0; index < serviceCount; index += 1) {
+        IOHIDServiceClientRef service = (IOHIDServiceClientRef)CFArrayGetValueAtIndex(services, index);
+        if (service == 0) {
+            continue;
+        }
+
+        CFTypeRef pageProperty = IOHIDServiceClientCopyProperty(service, CFSTR("PrimaryUsagePage"));
+        CFTypeRef usageProperty = IOHIDServiceClientCopyProperty(service, CFSTR("PrimaryUsage"));
+        int page = ResourceBarCFNumberInt(pageProperty);
+        int usage = ResourceBarCFNumberInt(usageProperty);
+        if (pageProperty != 0) {
+            CFRelease(pageProperty);
+        }
+        if (usageProperty != 0) {
+            CFRelease(usageProperty);
+        }
+        if (page != ResourceBarHIDVendorDefinedUsagePage || usage != ResourceBarHIDTemperatureUsage) {
+            continue;
+        }
+
+        char name[128];
+        if (!ResourceBarHIDTemperatureSensorName(service, name, sizeof(name))) {
+            continue;
+        }
+
+        int score = ResourceBarProcessorTemperatureSensorScore(name);
+        if (score <= 0) {
+            continue;
+        }
+
+        CFTypeRef event = copyEvent(service, ResourceBarHIDTemperatureEventType, 0, 0);
+        if (event == 0) {
+            continue;
+        }
+
+        double celsius = getFloatValue(event, ResourceBarHIDTemperatureEventField);
+        CFRelease(event);
+
+        if (!isfinite(celsius) || celsius <= 0 || celsius >= 125) {
+            continue;
+        }
+
+        if (score > bestScore) {
+            bestScore = score;
+            bestScoreCount = 1;
+            bestTemperature = celsius;
+        } else if (score == bestScore) {
+            bestScoreCount += 1;
+            if (celsius > bestTemperature) {
+                bestTemperature = celsius;
+            }
+        }
+    }
+
+    CFRelease(services);
+    CFRelease(client);
+
+    if (bestScoreCount > 0) {
+        if (sensorCount != 0) {
+            *sensorCount = bestScoreCount;
+        }
+        return bestTemperature;
     }
 
     return -273.15;

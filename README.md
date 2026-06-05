@@ -106,6 +106,7 @@ Click the menu bar item to see detailed readings, choose a display mode, and cho
 - Timer tolerance is enabled so macOS can coalesce wakeups.
 - Metrics use native Mach, BSD, and IOKit calls. The app does not shell out to `powermetrics`, `pmset`, `memory_pressure`, or `ioreg` during normal operation.
 - The menu bar temperature is read from SMC processor sensors when available. The click menu also shows battery temperature, battery virtual temperature, and system thermal state.
+- On Apple Silicon Macs, ResourceBar automatically falls back to HID temperature services and chooses processor/package sensors while ignoring battery and storage sensors, so it does not depend on generation-specific SMC keys.
 - The click menu shows signed battery power: watts into the battery while charging or watts out of the battery when the Mac is supplementing a weak adapter.
 - The click menu also shows actual adapter input wattage from power telemetry, plus the connected adapter's negotiated maximum wattage.
 - When the Mac is plugged in but net battery power is flowing out, the menu bar battery slot shows `OUT` instead of `CHG`.
