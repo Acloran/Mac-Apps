@@ -107,6 +107,6 @@ Click the menu bar item to see detailed readings, choose a display mode, and cho
 - Metrics use native Mach, BSD, and IOKit calls. The app does not shell out to `powermetrics`, `pmset`, `memory_pressure`, or `ioreg` during normal operation.
 - The menu bar temperature is read from SMC processor sensors when available. The click menu also shows battery temperature, battery virtual temperature, and system thermal state.
 - The click menu shows signed battery power: watts into the battery while charging or watts out of the battery when the Mac is supplementing a weak adapter.
-- The click menu also shows actual adapter input wattage from power telemetry, plus the connected adapter's negotiated maximum wattage.
+- The click menu also shows adapter capacity from power telemetry, plus the connected adapter's negotiated maximum wattage. This is an available input/limit reading, not a wall-meter measurement of the Mac's current consumption.
 - When the Mac is plugged in but net battery power is flowing out, the menu bar battery slot shows `OUT` instead of `CHG`.
 - Fan RPM is read through AppleSMC when available and shown only in the click menu.

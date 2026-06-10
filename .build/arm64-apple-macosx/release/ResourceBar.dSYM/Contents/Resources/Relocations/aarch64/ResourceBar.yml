@@ -93,8 +93,8 @@ relocations:
   - { offset: 0x12B5C1, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLOADSQAAWl', symObjAddr: 0x381C, symBinAddr: 0x100009B78, symSize: 0x40 }
   - { offset: 0x12B5D5, size: 0x8, addend: 0x0, symName: '_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtFSS_Tg5', symObjAddr: 0x385C, symBinAddr: 0x100009BB8, symSize: 0x1C }
   - { offset: 0x12B63A, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS_Tg5', symObjAddr: 0x3878, symBinAddr: 0x100009BD4, symSize: 0x108 }
-  - { offset: 0x12B86C, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x4774, symBinAddr: 0x10000AA80, symSize: 0x48 }
-  - { offset: 0x12B880, size: 0x8, addend: 0x0, symName: '_$sSo10NSMenuItemCMa', symObjAddr: 0x4800, symBinAddr: 0x10000AB0C, symSize: 0x44 }
+  - { offset: 0x12B86C, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x4778, symBinAddr: 0x10000AA84, symSize: 0x48 }
+  - { offset: 0x12B880, size: 0x8, addend: 0x0, symName: '_$sSo10NSMenuItemCMa', symObjAddr: 0x4804, symBinAddr: 0x10000AB10, symSize: 0x44 }
   - { offset: 0x12B914, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x110, symBinAddr: 0x100006470, symSize: 0x14 }
   - { offset: 0x12BD10, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLO6detailSSvg', symObjAddr: 0x0, symBinAddr: 0x100006360, symSize: 0x110 }
   - { offset: 0x12BE19, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLOSHAASH9hashValueSivgTW', symObjAddr: 0x124, symBinAddr: 0x100006484, symSize: 0x9C }
@@ -126,49 +126,49 @@ relocations:
   - { offset: 0x12D5B9, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC24configureDisplayModeMenu33_16FA77FDB67050E754776269F58C3DFDLLyyF', symObjAddr: 0x247C, symBinAddr: 0x1000087DC, symSize: 0x3F0 }
   - { offset: 0x12D6C3, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC25configureRefreshSpeedMenu33_16FA77FDB67050E754776269F58C3DFDLLyyF', symObjAddr: 0x286C, symBinAddr: 0x100008BCC, symSize: 0x228 }
   - { offset: 0x12D8DC, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppCACycfc', symObjAddr: 0x2A94, symBinAddr: 0x100008DF4, symSize: 0x8B4 }
-  - { offset: 0x12DBF9, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppCACycfcTo', symObjAddr: 0x3348, symBinAddr: 0x1000096A8, symSize: 0x20 }
-  - { offset: 0x12DC0D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppCfD', symObjAddr: 0x3368, symBinAddr: 0x1000096C8, symSize: 0x34 }
-  - { offset: 0x12DC30, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLO8rawValueADSgSS_tcfCTf4nd_n', symObjAddr: 0x3980, symBinAddr: 0x100009CDC, symSize: 0x64 }
-  - { offset: 0x12DC63, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC12memoryDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA22MemoryPressureSnapshotVFTf4nd_n', symObjAddr: 0x3A34, symBinAddr: 0x100009D40, symSize: 0x16C }
-  - { offset: 0x12DDB0, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC13batteryDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA15BatterySnapshotVFTf4nd_n', symObjAddr: 0x3BA0, symBinAddr: 0x100009EAC, symSize: 0x148 }
-  - { offset: 0x12DED3, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC23batteryPowerDescription33_16FA77FDB67050E754776269F58C3DFDLL_10isCharging0M4OnACSSSdSg_S2btFTf4nnnd_n', symObjAddr: 0x3CE8, symBinAddr: 0x100009FF4, symSize: 0x150 }
-  - { offset: 0x12E018, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC18adapterInputDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA15BatterySnapshotVFTf4nd_n', symObjAddr: 0x3E38, symBinAddr: 0x10000A144, symSize: 0x1A4 }
-  - { offset: 0x12E2FE, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC17temperatureDetail33_16FA77FDB67050E754776269F58C3DFDLL_7batterySSAA28ProcessorTemperatureSnapshotV_AA07BatteryO0VtFTf4nnd_nTf4xn_n', symObjAddr: 0x3FDC, symBinAddr: 0x10000A2E8, symSize: 0x358 }
-  - { offset: 0x12E71D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC9fanDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA11FanSnapshotVFTf4nd_n', symObjAddr: 0x4334, symBinAddr: 0x10000A640, symSize: 0x270 }
-  - { offset: 0x12EA47, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC19openActivityMonitor33_16FA77FDB67050E754776269F58C3DFDLLyyFTf4d_n', symObjAddr: 0x45A4, symBinAddr: 0x10000A8B0, symSize: 0x1D0 }
-  - { offset: 0x12ECF9, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwet', symObjAddr: 0x10, symBinAddr: 0x10000AB50, symSize: 0x90 }
-  - { offset: 0x12ED0D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwst', symObjAddr: 0xA0, symBinAddr: 0x10000ABE0, symSize: 0xB0 }
-  - { offset: 0x12ED21, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwug', symObjAddr: 0x150, symBinAddr: 0x10000AC90, symSize: 0x8 }
-  - { offset: 0x12ED35, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwup', symObjAddr: 0x158, symBinAddr: 0x10000AC98, symSize: 0x4 }
-  - { offset: 0x12ED49, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwui', symObjAddr: 0x15C, symBinAddr: 0x10000AC9C, symSize: 0x8 }
-  - { offset: 0x12ED5D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOMa', symObjAddr: 0x164, symBinAddr: 0x10000ACA4, symSize: 0x10 }
-  - { offset: 0x12ED71, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOs12CaseIterableAA8AllCasessADP_SlWT', symObjAddr: 0x174, symBinAddr: 0x10000ACB4, symSize: 0x4 }
-  - { offset: 0x12ED85, size: 0x8, addend: 0x0, symName: '_$sSay11ResourceBar11DisplayModeOGSayxGSlsWl', symObjAddr: 0x178, symBinAddr: 0x10000ACB8, symSize: 0x50 }
-  - { offset: 0x12F06C, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASQWb', symObjAddr: 0x8B8, symBinAddr: 0x10000B3A4, symSize: 0x4 }
-  - { offset: 0x12F080, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOACSQAAWl', symObjAddr: 0x8BC, symBinAddr: 0x10000B3A8, symSize: 0x40 }
-  - { offset: 0x12F094, size: 0x8, addend: 0x0, symName: '_$sSo6CGRectVSbIegyd_ABSbIeyByd_TR', symObjAddr: 0xA18, symBinAddr: 0x10000B504, symSize: 0x68 }
-  - { offset: 0x12F0B7, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0xA80, symBinAddr: 0x10000B56C, symSize: 0x64 }
-  - { offset: 0x12F0E4, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSo21NSAttributedStringKeya_Tg5', symObjAddr: 0xAE4, symBinAddr: 0x10000B5D0, symSize: 0x80 }
-  - { offset: 0x12F16D, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0xB64, symBinAddr: 0x10000B650, symSize: 0xAC }
-  - { offset: 0x12F1C4, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSo21NSAttributedStringKeya_Tg5', symObjAddr: 0xC10, symBinAddr: 0x10000B6FC, symSize: 0xF8 }
-  - { offset: 0x12F288, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZSbSo6CGRectVcfU_TA', symObjAddr: 0xDF8, symBinAddr: 0x10000B894, symSize: 0x14 }
-  - { offset: 0x12F29C, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0xE0C, symBinAddr: 0x10000B8A8, symSize: 0x14 }
-  - { offset: 0x12F2B0, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0xE20, symBinAddr: 0x10000B8BC, symSize: 0x8 }
-  - { offset: 0x12F445, size: 0x8, addend: 0x0, symName: '_$sSo21NSAttributedStringKeyaABSHSCWl', symObjAddr: 0x2990, symBinAddr: 0x10000D42C, symSize: 0x44 }
-  - { offset: 0x12F459, size: 0x8, addend: 0x0, symName: '_$sSo21NSAttributedStringKeya_yptWOc', symObjAddr: 0x29D4, symBinAddr: 0x10000D470, symSize: 0x50 }
-  - { offset: 0x12F46D, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x2A24, symBinAddr: 0x10000D4C0, symSize: 0x10 }
-  - { offset: 0x12F50D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x660, symBinAddr: 0x10000B14C, symSize: 0x14 }
-  - { offset: 0x12F8A0, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZ', symObjAddr: 0x21C, symBinAddr: 0x10000AD08, symSize: 0x444 }
-  - { offset: 0x12FADE, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZSbSo6CGRectVcfU_', symObjAddr: 0x8FC, symBinAddr: 0x10000B3E8, symSize: 0x11C }
-  - { offset: 0x12FC07, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH9hashValueSivgTW', symObjAddr: 0x674, symBinAddr: 0x10000B160, symSize: 0x90 }
-  - { offset: 0x12FCB3, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x704, symBinAddr: 0x10000B1F0, symSize: 0x6C }
-  - { offset: 0x12FD23, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x770, symBinAddr: 0x10000B25C, symSize: 0x8C }
-  - { offset: 0x12FDD2, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x7FC, symBinAddr: 0x10000B2E8, symSize: 0x2C }
-  - { offset: 0x12FDFB, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x828, symBinAddr: 0x10000B314, symSize: 0x50 }
-  - { offset: 0x12FE41, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOs12CaseIterableAAsADP8allCases03AllH0QzvgZTW', symObjAddr: 0x878, symBinAddr: 0x10000B364, symSize: 0x40 }
-  - { offset: 0x12FED2, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0xD08, symBinAddr: 0x10000B7F4, symSize: 0x64 }
-  - { offset: 0x12FF34, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSo21NSAttributedStringKeya_ypTt0g5Tf4g_n', symObjAddr: 0xE28, symBinAddr: 0x10000B8C4, symSize: 0x104 }
-  - { offset: 0x1302FF, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO11drawReduced33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0xF2C, symBinAddr: 0x10000B9C8, symSize: 0xA90 }
-  - { offset: 0x130BEA, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO8drawFull33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0x19BC, symBinAddr: 0x10000C458, symSize: 0x96C }
-  - { offset: 0x131450, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO8drawTiny33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0x2328, symBinAddr: 0x10000CDC4, symSize: 0x628 }
+  - { offset: 0x12DBF1, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppCACycfcTo', symObjAddr: 0x3348, symBinAddr: 0x1000096A8, symSize: 0x20 }
+  - { offset: 0x12DC05, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppCfD', symObjAddr: 0x3368, symBinAddr: 0x1000096C8, symSize: 0x34 }
+  - { offset: 0x12DC28, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLO8rawValueADSgSS_tcfCTf4nd_n', symObjAddr: 0x3980, symBinAddr: 0x100009CDC, symSize: 0x64 }
+  - { offset: 0x12DC5B, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC12memoryDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA22MemoryPressureSnapshotVFTf4nd_n', symObjAddr: 0x3A34, symBinAddr: 0x100009D40, symSize: 0x16C }
+  - { offset: 0x12DDA8, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC13batteryDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA15BatterySnapshotVFTf4nd_n', symObjAddr: 0x3BA0, symBinAddr: 0x100009EAC, symSize: 0x148 }
+  - { offset: 0x12DECB, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC23batteryPowerDescription33_16FA77FDB67050E754776269F58C3DFDLL_10isCharging0M4OnACSSSdSg_S2btFTf4nnnd_n', symObjAddr: 0x3CE8, symBinAddr: 0x100009FF4, symSize: 0x150 }
+  - { offset: 0x12E010, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC18adapterInputDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA15BatterySnapshotVFTf4nd_n', symObjAddr: 0x3E38, symBinAddr: 0x10000A144, symSize: 0x1A8 }
+  - { offset: 0x12E322, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC17temperatureDetail33_16FA77FDB67050E754776269F58C3DFDLL_7batterySSAA28ProcessorTemperatureSnapshotV_AA07BatteryO0VtFTf4nnd_nTf4xn_n', symObjAddr: 0x3FE0, symBinAddr: 0x10000A2EC, symSize: 0x358 }
+  - { offset: 0x12E741, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC9fanDetail33_16FA77FDB67050E754776269F58C3DFDLLySSAA11FanSnapshotVFTf4nd_n', symObjAddr: 0x4338, symBinAddr: 0x10000A644, symSize: 0x270 }
+  - { offset: 0x12EA6B, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC19openActivityMonitor33_16FA77FDB67050E754776269F58C3DFDLLyyFTf4d_n', symObjAddr: 0x45A8, symBinAddr: 0x10000A8B4, symSize: 0x1D0 }
+  - { offset: 0x12ED1D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwet', symObjAddr: 0x10, symBinAddr: 0x10000AB54, symSize: 0x90 }
+  - { offset: 0x12ED31, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwst', symObjAddr: 0xA0, symBinAddr: 0x10000ABE4, symSize: 0xB0 }
+  - { offset: 0x12ED45, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwug', symObjAddr: 0x150, symBinAddr: 0x10000AC94, symSize: 0x8 }
+  - { offset: 0x12ED59, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwup', symObjAddr: 0x158, symBinAddr: 0x10000AC9C, symSize: 0x4 }
+  - { offset: 0x12ED6D, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOwui', symObjAddr: 0x15C, symBinAddr: 0x10000ACA0, symSize: 0x8 }
+  - { offset: 0x12ED81, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOMa', symObjAddr: 0x164, symBinAddr: 0x10000ACA8, symSize: 0x10 }
+  - { offset: 0x12ED95, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOs12CaseIterableAA8AllCasessADP_SlWT', symObjAddr: 0x174, symBinAddr: 0x10000ACB8, symSize: 0x4 }
+  - { offset: 0x12EDA9, size: 0x8, addend: 0x0, symName: '_$sSay11ResourceBar11DisplayModeOGSayxGSlsWl', symObjAddr: 0x178, symBinAddr: 0x10000ACBC, symSize: 0x50 }
+  - { offset: 0x12F090, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASQWb', symObjAddr: 0x8B8, symBinAddr: 0x10000B3A8, symSize: 0x4 }
+  - { offset: 0x12F0A4, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOACSQAAWl', symObjAddr: 0x8BC, symBinAddr: 0x10000B3AC, symSize: 0x40 }
+  - { offset: 0x12F0B8, size: 0x8, addend: 0x0, symName: '_$sSo6CGRectVSbIegyd_ABSbIeyByd_TR', symObjAddr: 0xA18, symBinAddr: 0x10000B508, symSize: 0x68 }
+  - { offset: 0x12F0DB, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0xA80, symBinAddr: 0x10000B570, symSize: 0x64 }
+  - { offset: 0x12F108, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSo21NSAttributedStringKeya_Tg5', symObjAddr: 0xAE4, symBinAddr: 0x10000B5D4, symSize: 0x80 }
+  - { offset: 0x12F191, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0xB64, symBinAddr: 0x10000B654, symSize: 0xAC }
+  - { offset: 0x12F1E8, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSo21NSAttributedStringKeya_Tg5', symObjAddr: 0xC10, symBinAddr: 0x10000B700, symSize: 0xF8 }
+  - { offset: 0x12F2AC, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZSbSo6CGRectVcfU_TA', symObjAddr: 0xDF8, symBinAddr: 0x10000B898, symSize: 0x14 }
+  - { offset: 0x12F2C0, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0xE0C, symBinAddr: 0x10000B8AC, symSize: 0x14 }
+  - { offset: 0x12F2D4, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0xE20, symBinAddr: 0x10000B8C0, symSize: 0x8 }
+  - { offset: 0x12F469, size: 0x8, addend: 0x0, symName: '_$sSo21NSAttributedStringKeyaABSHSCWl', symObjAddr: 0x2990, symBinAddr: 0x10000D430, symSize: 0x44 }
+  - { offset: 0x12F47D, size: 0x8, addend: 0x0, symName: '_$sSo21NSAttributedStringKeya_yptWOc', symObjAddr: 0x29D4, symBinAddr: 0x10000D474, symSize: 0x50 }
+  - { offset: 0x12F491, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x2A24, symBinAddr: 0x10000D4C4, symSize: 0x10 }
+  - { offset: 0x12F531, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x660, symBinAddr: 0x10000B150, symSize: 0x14 }
+  - { offset: 0x12F8C4, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZ', symObjAddr: 0x21C, symBinAddr: 0x10000AD0C, symSize: 0x444 }
+  - { offset: 0x12FB02, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO5image3for4mode10appearanceSo7NSImageCAA0cD8SnapshotV_AA11DisplayModeOSo12NSAppearanceCtFZSbSo6CGRectVcfU_', symObjAddr: 0x8FC, symBinAddr: 0x10000B3EC, symSize: 0x11C }
+  - { offset: 0x12FC2B, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH9hashValueSivgTW', symObjAddr: 0x674, symBinAddr: 0x10000B164, symSize: 0x90 }
+  - { offset: 0x12FCD7, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x704, symBinAddr: 0x10000B1F4, symSize: 0x6C }
+  - { offset: 0x12FD47, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x770, symBinAddr: 0x10000B260, symSize: 0x8C }
+  - { offset: 0x12FDF6, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x7FC, symBinAddr: 0x10000B2EC, symSize: 0x2C }
+  - { offset: 0x12FE1F, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOSYAASY8rawValue03RawF0QzvgTW', symObjAddr: 0x828, symBinAddr: 0x10000B318, symSize: 0x50 }
+  - { offset: 0x12FE65, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeOs12CaseIterableAAsADP8allCases03AllH0QzvgZTW', symObjAddr: 0x878, symBinAddr: 0x10000B368, symSize: 0x40 }
+  - { offset: 0x12FEF6, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeO8rawValueACSgSS_tcfCTf4nd_n', symObjAddr: 0xD08, symBinAddr: 0x10000B7F8, symSize: 0x64 }
+  - { offset: 0x12FF58, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSo21NSAttributedStringKeya_ypTt0g5Tf4g_n', symObjAddr: 0xE28, symBinAddr: 0x10000B8C8, symSize: 0x104 }
+  - { offset: 0x130323, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO11drawReduced33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0xF2C, symBinAddr: 0x10000B9CC, symSize: 0xA90 }
+  - { offset: 0x130C0E, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO8drawFull33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0x19BC, symBinAddr: 0x10000C45C, symSize: 0x96C }
+  - { offset: 0x131474, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO8drawTiny33_B404347DCD211A13A5343D1C0CA64EAALL_4font9labelFont9textColor09secondaryT0yAA0cD8SnapshotV_So6NSFontCAMSo7NSColorCAOtFZTf4nnnnnd_n', symObjAddr: 0x2328, symBinAddr: 0x10000CDC8, symSize: 0x628 }
 ...

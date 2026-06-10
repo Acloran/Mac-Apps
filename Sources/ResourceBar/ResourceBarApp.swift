@@ -56,7 +56,7 @@ final class ResourceBarApp: NSObject, NSApplicationDelegate {
     private let memoryMenuItem = NSMenuItem(title: "Memory Pressure: --", action: nil, keyEquivalent: "")
     private let batteryMenuItem = NSMenuItem(title: "Battery Time: --", action: nil, keyEquivalent: "")
     private let batteryPowerMenuItem = NSMenuItem(title: "Battery Power: --", action: nil, keyEquivalent: "")
-    private let adapterInputMenuItem = NSMenuItem(title: "Adapter Input: --", action: nil, keyEquivalent: "")
+    private let adapterInputMenuItem = NSMenuItem(title: "Adapter Capacity: --", action: nil, keyEquivalent: "")
     private let temperatureMenuItem = NSMenuItem(title: "Temperature: CPU --", action: nil, keyEquivalent: "")
     private let networkDownMenuItem = NSMenuItem(title: "Network Down: --", action: nil, keyEquivalent: "")
     private let networkUpMenuItem = NSMenuItem(title: "Network Up: --", action: nil, keyEquivalent: "")
@@ -384,15 +384,15 @@ final class ResourceBarApp: NSObject, NSApplicationDelegate {
 
     private func adapterInputDetail(_ battery: BatterySnapshot) -> String {
         guard battery.isOnAC else {
-            return "Adapter Input: not connected"
+            return "Adapter Capacity: not connected"
         }
 
-        let actual = battery.adapterInputWatts.map(MetricFormatter.watts) ?? "-- W"
+        let available = battery.adapterInputWatts.map(MetricFormatter.watts) ?? "-- W"
         if let adapterWatts = battery.adapterWatts {
-            return "Adapter Input: \(actual) actual (\(MetricFormatter.watts(adapterWatts)) max)"
+            return "Adapter Capacity: \(available) available (\(MetricFormatter.watts(adapterWatts)) max)"
         }
 
-        return "Adapter Input: \(actual) actual"
+        return "Adapter Capacity: \(available) available"
     }
 
     private func batteryPowerDescription(_ watts: Double?, isCharging: Bool, isOnAC: Bool) -> String {

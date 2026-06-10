@@ -261,8 +261,8 @@ relocations:
   - { offset: 0x129E0A, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13SystemMonitorCACycfC', symObjAddr: 0x94E4, symBinAddr: 0x10000F364, symSize: 0x38 }
   - { offset: 0x129E1E, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13SystemMonitorCACycfc', symObjAddr: 0x951C, symBinAddr: 0x10000F39C, symSize: 0x2D8 }
   - { offset: 0x129FF6, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar13RefreshPreset33_16FA77FDB67050E754776269F58C3DFDLLO5titleSSvg', symObjAddr: 0x0, symBinAddr: 0x100011E68, symSize: 0xC8 }
-  - { offset: 0x12A01A, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC16refreshPresetKey33_16FA77FDB67050E754776269F58C3DFDLLSSvpZ', symObjAddr: 0x1CE10, symBinAddr: 0x10002D340, symSize: 0x0 }
-  - { offset: 0x12A034, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC14displayModeKey33_16FA77FDB67050E754776269F58C3DFDLLSSvpZ', symObjAddr: 0x1CE20, symBinAddr: 0x10002D350, symSize: 0x0 }
+  - { offset: 0x12A01A, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC16refreshPresetKey33_16FA77FDB67050E754776269F58C3DFDLLSSvpZ', symObjAddr: 0x1CE30, symBinAddr: 0x10002D340, symSize: 0x0 }
+  - { offset: 0x12A034, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC14displayModeKey33_16FA77FDB67050E754776269F58C3DFDLLSSvpZ', symObjAddr: 0x1CE40, symBinAddr: 0x10002D350, symSize: 0x0 }
   - { offset: 0x12A132, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC16refreshPresetKey33_16FA77FDB67050E754776269F58C3DFDLL_WZ', symObjAddr: 0xAAC, symBinAddr: 0x1000128EC, symSize: 0x40 }
   - { offset: 0x12A14C, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC16refreshPresetKey33_16FA77FDB67050E754776269F58C3DFDLLSSvau', symObjAddr: 0xAEC, symBinAddr: 0x10001292C, symSize: 0x50 }
   - { offset: 0x12A851, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar0aB3AppC14displayModeKey33_16FA77FDB67050E754776269F58C3DFDLL_WZ', symObjAddr: 0xB7C, symBinAddr: 0x1000129BC, symSize: 0x40 }
@@ -432,7 +432,7 @@ relocations:
   - { offset: 0x12C435, size: 0x8, addend: 0x0, symName: '_$sSo10NSMenuItemC5title6action13keyEquivalentABSS_10ObjectiveC8SelectorVSgSStcfcTO', symObjAddr: 0xB534, symBinAddr: 0x10001D0B8, symSize: 0x9C }
   - { offset: 0x12C449, size: 0x8, addend: 0x0, symName: '_$sSo6NSMenuCABycfcTO', symObjAddr: 0xB5D0, symBinAddr: 0x10001D154, symSize: 0x18 }
   - { offset: 0x12C5DC, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar11DisplayModeO5titleSSvg', symObjAddr: 0x0, symBinAddr: 0x10001DA94, symSize: 0xC8 }
-  - { offset: 0x12C600, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO6height12CoreGraphics7CGFloatVvpZ', symObjAddr: 0x38D0, symBinAddr: 0x100023950, symSize: 0x0 }
+  - { offset: 0x12C600, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO6height12CoreGraphics7CGFloatVvpZ', symObjAddr: 0x38D0, symBinAddr: 0x100023970, symSize: 0x0 }
   - { offset: 0x12C76E, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO6height_WZ', symObjAddr: 0x65C, symBinAddr: 0x10001E0B0, symSize: 0x4 }
   - { offset: 0x12C788, size: 0x8, addend: 0x0, symName: '_$s11ResourceBar19StatusStripRendererO6height12CoreGraphics7CGFloatVvau', symObjAddr: 0x660, symBinAddr: 0x10001E0B4, symSize: 0xC }
   - { offset: 0x12C931, size: 0x8, addend: 0x0, symName: '_$sSo16NSAppearanceNameaMa', symObjAddr: 0xC8C, symBinAddr: 0x10001E6E0, symSize: 0x94 }
